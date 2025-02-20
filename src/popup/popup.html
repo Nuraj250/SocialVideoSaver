@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SocialVideoSaver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>SocialVideoSaver</h2>
+
+  <div id="container">
+    <input type="text" id="videoUrl" placeholder="Paste video URL here">
+    <button id="fetchBtn">Fetch Video</button>
+
+    <div id="loading" class="hidden">Fetching details...</div>
+
+    <div id="previewContainer" class="hidden">
+      <img id="videoThumbnail" src="" alt="Thumbnail">
+      <label for="formatSelect">Choose Format:</label>
+      <select id="formatSelect"></select>
+      <button id="downloadBtn">Download</button>
+    </div>
+
+    <p id="status"></p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
